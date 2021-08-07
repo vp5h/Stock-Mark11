@@ -30,10 +30,12 @@ export default function App() {
       if (amt > 0) {
         if (cPrice / bPrice > 1.5) {
           setBg("#964B00");
+          setMes("You Got a Profit of 🎉");
         } else {
           setBg("");
+          setMes("You Got a Profit of");
         }
-        setMes("You Got a Profit of");
+
         setProfit(Math.abs(amt));
       } else if (amt === 0) {
         setMes("Looks Like You are Fine");
