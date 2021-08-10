@@ -73,9 +73,21 @@ export default function App() {
 
           <h4>Enter the amount and Qunatity and See the Magic</h4>
 
-          <input placeholder="Buy Price" onChange={BpriceHAndler}></input>
-          <input placeholder="Qunatity" onChange={QuantityHAndler}></input>
-          <input placeholder="Current Price" onChange={CpriceHAndler}></input>
+          <input
+            type="number"
+            placeholder="Buy Price"
+            onChange={BpriceHAndler}
+          ></input>
+          <input
+            type="number"
+            placeholder="Qunatity"
+            onChange={QuantityHAndler}
+          ></input>
+          <input
+            type="number"
+            placeholder="Current Price"
+            onChange={CpriceHAndler}
+          ></input>
 
           <button onClick={Profit}>Calculate</button>
 
