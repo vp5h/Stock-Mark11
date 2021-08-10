@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "./styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function App() {
   const [profit, setProfit] = useState("");
@@ -62,9 +68,8 @@ export default function App() {
       <section className="section">
         <div className="container container-center section-center">
           <header className="hero">
-            <h1 className="hero-heading">Cash Register Manager</h1>
+            <h1 className="hero-heading">Profit Calculator</h1>
           </header>
-          {/* <h1> Profit Calculator</h1> */}
 
           <h4>Enter the amount and Qunatity and See the Magic</h4>
 
@@ -82,6 +87,26 @@ export default function App() {
           </h3>
         </div>
       </section>
+      <footer className="footer">
+        <div className="footer-header">Socials</div>
+        <ul className="social-links list-non-bullet">
+          <li className="list-item-inline">
+            <a className="link" href="https://github.com/vp5h">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a className="link" href="https://twitter.com/v_p5h">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a className="link" href="https://www.linkedin.com/in/vp5h/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
